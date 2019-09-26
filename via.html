@@ -2198,10 +2198,7 @@ function pack_via_metadata(return_type) {
                 csvdata.push( csvline.join(VIA_CSV_SEP) );
             }
           }
-        } else {
-          // @todo: reconsider this practice of adding an empty entry
-          csvdata.push(prefix + ',0,0,"{}","{}"');
-        }
+        } 
       }
       ok_callback(csvdata);
     }
